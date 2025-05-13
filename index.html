@@ -1,18 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="ms">
 <head>
-    <link rel="website icon" href="images/python-icon.png">
-    <style>
-        p {
-          color: blue;
-          background: tomato;
-          font-size: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kejutan Untuk Danial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-color: #0288d1;
+      color: white;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #0288d1;
+      margin-top: 40px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+    .content {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .button {
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0277bd;
+    }
+    .hidden-message {
+      margin-top: 25px;
+      font-size: 1.3em;
+      color: #d32f2f;
+      display: none;
+      animation: fadeIn 1.5s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #eeeeee;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-  <h1>MUHAMMAD DANIAL BIN MUHAMMAD DAZMI</h1>
-    <p>Saya hensem</p>
-  
+  <header>
+    <h1>Hai Muhammad Danial!</h1>
+    <p>Surat digital khas daripada seorang yang menghargai kamu</p>
+  </header>
 
+  <div class="content">
+    <h2>Siapakah Danial di mata kami?</h2>
+    <p>
+      Danial bukan sekadar nama. Dia seorang yang penuh semangat, murah dengan senyuman, dan sentiasa ada untuk orang di sekelilingnya. 
+      Dalam dunia yang penuh kebisingan, kehadiran Danial adalah ketenangan.
+    </p>
+
+    <h2>Kenangan Bersama</h2>
+    <p>
+      Dari gelak ketawa yang tak habis-habis, gurauan spontan, sampai detik susah yang kita tempuhi sama-sama — semuanya jadi kenangan 
+      yang tak ternilai. Danial, kau hadir sebagai cahaya dalam hidup ramai orang.
+    </p>
+
+    <h2>Kata-Kata Untukmu</h2>
+    <p>
+      Jangan pernah ragu dengan diri sendiri. Kau lebih kuat, lebih hebat, dan lebih bermakna dari apa yang kau fikir. 
+      Teruskan jadi versi terbaik dirimu.
+    </p>
+
+    <button class="button" onclick="showMessage()">Tekan untuk mesej rahsia</button>
+    <p id="secret" class="hidden-message">Danial, dunia ini lebih indah kerana adanya insan seperti kau. Terima kasih kerana menjadi dirimu.</p>
+  </div>
+
+  <footer>
+    Daripada seseorang yang sangat menghargai persahabatan ini.
+  </footer>
+
+  <script>
+    function showMessage() {
+      const msg = document.getElementById("secret");
+      msg.style.display = "block";
+    }
+  </script>
 </body>
 </html>
