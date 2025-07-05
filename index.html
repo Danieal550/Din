@@ -1,109 +1,77 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kejutan Untuk Danial</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ucapan untuk Adik</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-      color: #333;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
+      color: #333;
     }
-    header {
-      background-color: #0288d1;
-      color: white;
-      padding: 50px 20px;
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      max-width: 500px;
+      animation: fadeIn 2s ease;
     }
+
     h1 {
-      font-size: 2.8em;
+      color: #0077b6;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
-    h2 {
-      color: #0288d1;
-      margin-top: 40px;
-    }
+
     p {
       font-size: 1.2em;
-      line-height: 1.6em;
     }
-    .content {
-      padding: 30px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
+
     .button {
-      background-color: #0288d1;
+      margin-top: 20px;
+      background-color: #48cae4;
       color: white;
+      padding: 10px 20px;
       border: none;
-      padding: 15px 25px;
-      font-size: 1em;
       border-radius: 10px;
       cursor: pointer;
-      margin-top: 20px;
-      transition: 0.3s ease;
+      font-size: 1em;
+      transition: 0.3s;
     }
+
     .button:hover {
-      background-color: #0277bd;
+      background-color: #0096c7;
     }
-    .hidden-message {
-      margin-top: 25px;
-      font-size: 1.3em;
-      color: #d32f2f;
-      display: none;
-      animation: fadeIn 1.5s ease forwards;
-    }
+
     @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #eeeeee;
-      font-style: italic;
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hai Muhammad Danial!</h1>
-    <p>Surat digital khas daripada seorang yang menghargai kamu</p>
-  </header>
-
-  <div class="content">
-    <h2>Siapakah Danial di mata kami?</h2>
-    <p>
-      Danial bukan sekadar nama. Dia seorang yang penuh semangat, murah dengan senyuman, dan sentiasa ada untuk orang di sekelilingnya. 
-      Dalam dunia yang penuh kebisingan, kehadiran Danial adalah ketenangan.
-    </p>
-
-    <h2>Kenangan Bersama</h2>
-    <p>
-      Dari gelak ketawa yang tak habis-habis, gurauan spontan, sampai detik susah yang kita tempuhi sama-sama — semuanya jadi kenangan 
-      yang tak ternilai. Danial, kau hadir sebagai cahaya dalam hidup ramai orang.
-    </p>
-
-    <h2>Kata-Kata Untukmu</h2>
-    <p>
-      Jangan pernah ragu dengan diri sendiri. Kau lebih kuat, lebih hebat, dan lebih bermakna dari apa yang kau fikir. 
-      Teruskan jadi versi terbaik dirimu.
-    </p>
-
-    <button class="button" onclick="showMessage()">Tekan untuk mesej rahsia</button>
-    <p id="secret" class="hidden-message">Danial, dunia ini lebih indah kerana adanya insan seperti kau. Terima kasih kerana menjadi dirimu.</p>
+  <div class="card">
+    <h1>🌟 Tahniah Adik! 🌟</h1>
+    <p>Selamat melangkah ke alam matrikulasi di <strong>Kedah</strong>!<br/>
+    Kak/Abang bangga dengan kamu. Teruskan usaha, jangan mudah putus asa!<br/>
+    Matrik bukan mudah, tapi kamu lagi hebat 💪</p>
+    <button class="button" onclick="showMessage()">Tekan sini 😄</button>
   </div>
-
-  <footer>
-    Daripada seseorang yang sangat menghargai persahabatan ini.
-  </footer>
 
   <script>
     function showMessage() {
-      const msg = document.getElementById("secret");
-      msg.style.display = "block";
+      alert("Ingat, kejayaan bermula dengan langkah kecil. All the best, adik!");
     }
   </script>
 </body>
